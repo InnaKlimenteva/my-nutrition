@@ -1,38 +1,225 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+body {
+  background-image:url('/src/bg2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.containter-horizont {
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container_loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.33);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .lds-roller {
+  position: absolute;
+  top: 45%;
+  left: 45%;
   }
-}
+  
+  .lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+  }
+  
+  .lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #6acd00;
+  margin: -4px 0 0 -4px;
+  z-index: 2;
+  }
+  
+  .lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+  }
+  
+  .lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+  background: #6acd00;
+  }
+  
+  .lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+  }
+  
+  .lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+  background: #6acd00;
+  }
+  
+  .lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+  }
+  
+  .lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+  background:#6acd00;
+  }
+  
+  .lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+  }
+  
+  .lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+  background: #6acd00;
+  }
+  
+  .lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+  }
+  
+  .lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+  background:#6acd00(231, 61, 61);
+  }
+  
+  .lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+  }
+  
+  .lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+  background: #6acd00(222, 114, 114);
+  }
+  
+  .lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+  }
+  
+  .lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+  background: #6acd00(198, 130, 130);
+  }
+  
+  .lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+  }
+  
+  .lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+  background: #6acd00(151, 130, 130);
+  }
+  
+  @keyframes lds-roller {
+  0% {
+  transform: rotate(0deg);
+  }
+  
+  100% {
+  transform: rotate(360deg);
+  }
+  }
+
+  .btn {
+    background-color: #6acd00;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    padding: 5px;
+    margin-left:2px;
+  }
+
+
+  .box{
+    width: 600px;
+    padding: 18px;
+    border: 1px solid #e8e8e8;
+    border-radius: 14px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-top: 100px;
+    background-color: hsla(90, 96%, 50%, 0.01);
+  }
+  
+
+  p {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #305904 ;
+    text-decoration: underline;
+  }
+
+  input {
+    border-radius: 30px;
+    border:1px solid #6acd00;
+    padding-left: 10px;
+    caret-color:#6acd00 ;
+  }
+
+  input:focus {
+    outline: 1px solid #6acd00;
+    border: none;
+  }
+
+  h1 {
+    color: #4f5158;
+    margin-top: 70px;
+  }
+
+  li::marker {
+    color: #6acd00;
+    content: '-  ';
+  }
+
+  li {
+    color: #305904;
+    margin-bottom: 10px;
+  }
+
+  span {
+    margin-left: 10px;
+    color: #6acd00;
+  
+  }
+
+  h6 {
+    margin-top: -10px;
+    color: #9fa09e;
+  }
+
+  @media all and (max-width:430px){
+    .box{
+      width: 300px;
+      padding: 14px;
+    }
+
+    body {
+      background-image: none;
+    }
+    
+
+  }
+
+ 
