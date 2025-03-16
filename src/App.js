@@ -100,10 +100,12 @@ function App() {
 
 <div className={myNutrition && Object.values(myNutrition.totalNutrients).length > 0 ? "box" : ""}>
 
-        <div className="containter-horizont">
-             <p>{wordSubmitted}</p>
-        </div>
-  {myNutrition && Object.values(myNutrition.totalNutrients)
+
+<div className="containter-horizont">
+{myNutrition && <p>{wordSubmitted}</p>}
+</div> 
+
+  {myNutrition &&  Object.values(myNutrition.totalNutrients)
     .map(({ label, quantity, unit }, index) => (
       <Nutrition
         key={index}

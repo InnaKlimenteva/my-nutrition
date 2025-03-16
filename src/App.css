@@ -24,16 +24,20 @@
 }
 
 .container_loader {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.33);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
   
+  
   .lds-roller {
-  position: absolute;
+   position: absolute;
   top: 45%;
-  left: 45%;
+  left: 45%; 
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  margin: 0; 
+  padding: 0; 
   }
   
   .lds-roller div {
@@ -214,7 +218,9 @@
 
   @media all and (max-width:1030px){
     .bg-img {
-      background-image:url('/src/bg.png');
+      background-image:url('/src/bg4.png');
+      min-height: 90vh;
+      background-position: bottom;
     } 
   }
 
@@ -239,6 +245,16 @@
       margin-left: -20px;
     }
     
+    .lds-roller {
+    position: absolute;
+     top: 45%;
+     left: 39%; 
+     transform: translate(-50%, -50%);
+     z-index: 1000;
+     margin: 0; 
+     padding: 0; 
+     }
+     
 
   }
 
