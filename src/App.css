@@ -181,6 +181,7 @@ body {
   input:focus {
     outline: 1px solid #6acd00;
     border: none;
+    font-size: 16px;
   }
 
   h1 {
@@ -212,11 +213,14 @@ body {
   @media all and (max-width:430px){
     .box{
       width: 300px;
-      padding: 14px;
+      padding: 5px;
     }
 
     body {
-      background-image: none;
+      
+      background-image: url('/src/bg4.png');
+      background-position: top;
+      background-position-y: 30px;
     }
     
 
