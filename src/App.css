@@ -1,10 +1,12 @@
 
 
-body {
+.bg-img {
   background-image:url('/src/bg2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
+  margin: 0;
 } 
 
 .container {
@@ -210,17 +212,31 @@ body {
     color: #9fa09e;
   }
 
+  @media all and (max-width:1030px){
+    .bg-img {
+      background-image:url('/src/bg.png');
+    } 
+  }
+
   @media all and (max-width:430px){
     .box{
       width: 300px;
       padding: 5px;
     }
 
-    body {
-      
+    .bg-img {
       background-image: url('/src/bg4.png');
-      background-position: top;
-      background-position-y: 30px;
+      min-height: 80vh;
+    }
+
+    li::marker {
+      color: #6acd00;
+      content: normal;
+    }
+  
+    li {
+      color: #305904;
+      margin-left: -20px;
     }
     
 

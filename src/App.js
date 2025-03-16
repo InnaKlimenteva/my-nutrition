@@ -13,6 +13,7 @@ function App() {
   const [wordSubmitted, setWordSubmitted] = useState(''); //финальный поиск по слову
   const [myNutrition, setMyNutrition] = useState();
   const [stateLoader, setStateLoader] = useState(false); //лоадер
+  const [bgState, setBgState] = useState(true); //меняется бэеграунд
 
   const APP_ID = 'dc43f5c9';
   const APP_KEY = '41004f36187693a52846881269bea7f0';
@@ -20,7 +21,7 @@ function App() {
 
   const fetchData = async (ingr) => {
     setStateLoader(true);
-
+    setBgState(false);
     const response = await fetch(`${APP_URL}?app_id=${APP_ID}&app_key=${APP_KEY}`, {
       method: "POST",    //метод запроса
       headers: {
@@ -46,10 +47,7 @@ function App() {
     }
   }
   
-  //ingredients entered incorrectly
-
-
-
+  
 
   const myRecipeSearch = (e) => {
     setMySearch(e.target.value);
@@ -79,7 +77,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className={bgState? 'bg-img' : ''}>
       {stateLoader && <LoaderPage />}
       
       <div className="container">
