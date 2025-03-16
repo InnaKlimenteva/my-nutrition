@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Nutrition Analysis App
+![для Ридми](https://github.com/user-attachments/assets/7248c6cc-fffa-4bb3-9ae5-ce9568321710)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+The **Nutrition Analysis App** is a web-based application that allows users to analyze the nutritional content of food products by entering the quantity and type of food items. The app fetches nutritional data from the Edamam API and presents detailed nutritional information, such as calories, proteins, fats, carbs, and more.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Nutritional Information**: Enter food ingredients with quantities (e.g., "1 apple") to get detailed nutritional information.
+- **Real-time Results**: Instantaneous response with detailed analysis of the food items.
+- **User-Friendly Interface**: Simple and intuitive interface for easy interaction.
+- **Loader State**: Displays a loading screen while fetching data.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **React**: For building the user interface.
+ ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+- **Edamam** API: Used to fetch nutritional data.
+  ![Edamam API](https://img.shields.io/badge/Edamam-3B87A6?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy533gWFP8f5Q-EC9QEoVr+z)
+- **SweetAlert2**: For user-friendly alerts and error handling.
+  ![SweetAlert2](https://img.shields.io/badge/SweetAlert2-0F9F4A?style=for-the-badge&logo=sweetalert2&logoColor=white)
+- **CSS**: Styling the application to ensure responsiveness and a smooth user experience.
+  ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Demo
 
-### `npm run build`
+You can view the live demo of the app [here](https://nutrition-check-app.netlify.app/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How It Works
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1.Enter the name of the food item and its quantity (e.g., 1 apple 🍏, 2 bananas).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2.The app will send this data to the Edamam API to fetch nutritional information.
 
-### `npm run eject`
+3.The nutritional data will be displayed on the screen, including calories, proteins, fats, carbs, and more.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4.If there is an error (e.g., incorrect input), an alert will be shown to the user with feedback on how to correct the input.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
